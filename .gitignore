@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.qa/
+.cache/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+*.sqlite*
+*.db
+*.xls
+*.xlsx
+*.pdf
+*.csv
+*.bak
