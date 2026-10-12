@@ -9,8 +9,10 @@ Product: frozen portfolio demonstration with independently authored simulation.
 - TESTED: typecheck, 18/18 behavior tests, static build and publication-boundary scan pass on 2026-10-12 (Asia/Shanghai). The export contains 38 reviewed source/doc files and five generated static assets before Git initialization.
 - RUNTIME VERIFIED: desktop rendering, twelve current buildings, account/asset selection, asset navigation, month/year replay, pause/speed/keyboard seek, and project explanation. Mobile 390×844 viewport has no document overflow; tables scroll within their container.
 - RUNTIME VERIFIED: static assets run under the project subpath; there is no financial service or database. The obsolete Three.js shadow setting was replaced with the current PCF setting.
-- Clean-clone verification: pending final verification.
-- GitHub publication / hosted Demo: pending final verification.
+- TESTED: a fresh Git clone installs with the frozen lockfile and passes typecheck, 18/18 tests, build and public-file audit without original-project dependencies.
+- RUNTIME VERIFIED: the hosted Demo renders twelve current buildings and opens the asset workspace; the hosted origin has no browser errors or warnings in the observed session.
+- Published: [GitHub source](https://github.com/TomNick777/otter-holdings), [static Demo](https://tomnick777.github.io/otter-holdings/). First Linux CI + Pages deployment passed for source checkpoint `32eceff` ([workflow evidence](https://github.com/TomNick777/otter-holdings/actions/runs/38202394696)).
+- Release scope is complete and frozen. Subsequent documentation checkpoints do not change the verified application build.
 
 ## Boundaries
 
