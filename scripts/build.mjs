@@ -6,7 +6,10 @@ import { pathToFileURL } from "node:url";
 export async function buildWebsite() {
   await mkdir("dist", { recursive: true });
   await build({
-    entryPoints: { app: "src/web/main.tsx" },
+    entryPoints: {
+      app: "src/web/main.tsx",
+      "isometric/app": "src/web/isometric/main.tsx",
+    },
     bundle: true,
     platform: "browser",
     format: "esm",
@@ -17,6 +20,7 @@ export async function buildWebsite() {
     define: { "process.env.NODE_ENV": '"production"' },
   });
   await copyFile("index.html", "dist/index.html");
+  await copyFile("src/web/isometric/index.html", "dist/isometric/index.html");
   await copyFile("favicon.svg", "dist/favicon.svg");
   console.log("Built standalone simulation in dist/");
 }

@@ -67,6 +67,7 @@ function App() {
       {page === "about" && <About />}
       <footer className="site-footer">
         <span>OTTER HOLDINGS / PUBLIC EDITION</span>
+        <a href="./isometric/">等距园区版 ↗</a>
         <span>独立模拟场景 · MIT License</span>
       </footer>
     </div>

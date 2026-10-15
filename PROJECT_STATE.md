@@ -2,6 +2,14 @@
 
 Product: frozen portfolio demonstration with independently authored simulation.
 
+## Isometric design edition — 2026-10-15
+
+- IMPLEMENTED: separate `/isometric/` static entry preserving the original SVG campus, cream palette, navigation and overview layout. Two independently authored fictional account snapshots replace all private inputs. No original runtime, API, database or financial records are included.
+- IMPLEMENTED: account selection, building/cash inspection, keyboard activation, valuation breakdown with native modal focus handling, and explicit unknown history/performance. Amount aggregation reuses the domain valuation function; the renderer consumes application output. The original SVG relative-value height mapping is disclosed separately from the quantity-driven Three.js edition.
+- TESTED: TypeScript check, 18/18 existing behavior tests, both-entry static build and public-file audit passed. The original city remains the root entry and links to the separate design edition.
+- RUNTIME VERIFIED (local): project-subpath rendering, building keyboard selection, cash inspection, account switching and valuation dialog; responsive 390×844 viewport has no horizontal document overflow. Public hosting of this addition is pending deployment at this checkpoint.
+- Scope: owner-requested additional design presentation; original financial application remains archived. No account-connected capabilities were resumed.
+
 ## Current scope
 
 - IMPLEMENTED: Three.js investment city, six-account selection, stable asset lots, quantity timeline, current asset workspace and project explanation.

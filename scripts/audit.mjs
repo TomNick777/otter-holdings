@@ -71,7 +71,7 @@ async function inspect(dir = ".", rel = "") {
     }
     const contents = await readFile(path, "utf8");
     // Public dependency license contacts are attribution, not scenario data.
-    const patterns = relative === "dist/app.js.LEGAL.txt"
+    const patterns = relative.endsWith("/app.js.LEGAL.txt")
       ? privatePatterns.filter((pattern) => !pattern.source.includes("gmail"))
       : privatePatterns;
     if (patterns.some((pattern) => pattern.test(contents)))

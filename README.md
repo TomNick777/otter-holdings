@@ -4,6 +4,8 @@
 
 [打开在线 Demo](https://tomnick777.github.io/otter-holdings/) · [工程设计](docs/architecture.md) · [MIT License](LICENSE)
 
+[打开等距园区版](https://tomnick777.github.io/otter-holdings/isometric/)：保留早期米白色界面、SVG 双楼园区和五项导航的独立设计展示。支持账户切换、建筑与现金庭院选择、估值组成弹窗；两个账户均为独立模拟快照，没有真实资料或后端服务。活动与表现页明确保留未提供的历史数据。三维城市版按数量映射建筑，等距园区版按账户内部的相对市值提示楼高，两版的视觉含义分别在页面说明。
+
 ![投资城市](docs/city.png)
 
 ## 体验
@@ -27,6 +29,8 @@ pnpm dev
 ```
 
 访问 `http://127.0.0.1:3518/`。修改源码后重新运行 `pnpm dev`，开发预览会先构建。
+
+等距园区版位于 `http://127.0.0.1:3518/isometric/`；入口为 `src/web/isometric/main.tsx`。
 
 ```sh
 pnpm typecheck

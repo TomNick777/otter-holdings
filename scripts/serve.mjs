@@ -9,6 +9,11 @@ const base = process.env.BASE_PATH ?? "/";
 if (!base.startsWith("/") || !base.endsWith("/"))
   throw new Error("BASE_PATH must start and end with /");
 const allowed = new Map([
+  ["isometric/", "isometric/index.html"],
+  ["isometric/index.html", "isometric/index.html"],
+  ["isometric/app.js", "isometric/app.js"],
+  ["isometric/app.css", "isometric/app.css"],
+  ["isometric/app.js.LEGAL.txt", "isometric/app.js.LEGAL.txt"],
   ["", "index.html"],
   ["index.html", "index.html"],
   ["app.js", "app.js"],
